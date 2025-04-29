@@ -1,0 +1,16 @@
+{
+	"name": "test",
+	"private": true,
+	"workspaces": ["./packages/*"],
+	"scripts": {
+		"biome:check": "biome check",
+		"biome:fix": "biome check --write",
+		"sort:packagejson": "npx --yes sort-package-json"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4"
+	},
+	"engines": {
+		"node": ">=22"
+	}
+}
